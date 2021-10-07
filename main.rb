@@ -61,6 +61,8 @@ myChineseArmy.transform(aKnightToBeTransformed)
 
 
 
-battle_manager = BattleManager.new(myChineseArmy, enemyArmy)
+battle_manager = BattleManager.new(enemyArmy, enemyArmy)
 battle_manager.face_armies
-
+puts "enemoes army total strength after battling: #{enemyArmy.totalStrength}"
+enemyArmy.get_last_battle
+myChineseArmy.get_last_battle
