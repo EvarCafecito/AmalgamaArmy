@@ -37,6 +37,7 @@ class Army
     end
 
     def removeFirstTwoPowerfullUnits()
-        @civilization.army = army.sort_by{|anUnit| anUnit.strength_points}.drop(2)
+        armyOrderedByStrengthPoints = army.sort_by{|anUnit| anUnit.strength_points}
+        @civilization.army = armyOrderedByStrengthPoints.drop(2)
     end
 end
